@@ -1,4 +1,4 @@
-## @amarajs/plugin-engine-browser
+## [@amarajs/plugin-engine-browser](https://github.com/amarajs/plugin-engine-browser)
 
 Plugin middleware for AmaraJS to work in web browsers.
 
@@ -18,7 +18,7 @@ const amara = new Amara([
 
 ### Description
 
-The `@amarajs/plugin-engine-browser` middleware provides `@amarajs/core` with the ability to map each feature's `target` selector strings to DOM nodes. For example:
+The `@amarajs/plugin-engine-browser` middleware provides [`@amarajs/core`](https://github.com/amarajs/core) with the ability to map each feature's `target` selector strings to DOM nodes. For example:
 
 ```javascript
 amara.add({
@@ -33,7 +33,7 @@ amara.add({
 
 ### Actions Dispatched
 
-The `@amarajs/plugin-engine-browser` middleware dispatches an `"engine:append-observed-attributes"` action during bootstrap. This allows other middleware to specify which DOM attributes should be watched for changes. For example, `@amarajs/plugin-router` adds `"route"` to the list of observed attributes, ensuring that any features which target `[route]` attributes will be applied automatically by AmaraJS.
+The `@amarajs/plugin-engine-browser` middleware dispatches an `"engine:append-observed-attributes"` action during bootstrap. This allows other middleware to specify which DOM attributes should be watched for changes. For example, [`@amarajs/plugin-router`](https://github.com/amarajs/plugin-router) adds `"route"` to the list of observed attributes, ensuring that any features which target `[route]` attributes will be applied automatically by AmaraJS.
 
 action.type | action.payload
 --- | ---
@@ -59,7 +59,7 @@ This plugin has no customization options.
 
 If you have a feature request, please create a new issue so the community can discuss it.
 
-If you find a defect, please submit a bug report that includes a working link to reproduce the problem (for example, using [jsBin](https://jsbin.com)). Of course, pull requests to fix open issues are always welcome!
+If you find a defect, please submit a bug report that includes a working link to reproduce the problem (for example, using [this fiddle](https://jsfiddle.net/04f3v2x4/)). Of course, pull requests to fix open issues are always welcome!
 
 ### License
 
